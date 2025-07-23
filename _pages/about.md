@@ -1,10 +1,10 @@
 ---
 permalink: /about/
 title: "About me"
-layout:single
+layout: single
 ---
 
-## 
+
 ## background information
 ## research field
 ## contact me
