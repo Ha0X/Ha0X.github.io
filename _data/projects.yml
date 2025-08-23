@@ -1,0 +1,17 @@
+# _data/projects.yml
+projects:
+  - image_path: /assets/images/project1.png
+    alt: "项目1"
+    title: "项目 1"
+    url: "https://github.com/yourname/project1"
+    excerpt: "项目 1 的简介，比如用到的技术、成果"
+  - image_path: /assets/images/project2.png
+    alt: "项目2"
+    title: "项目 2"
+    url: "https://github.com/yourname/project2"
+    excerpt: "项目 2 的简介"
+  - image_path: /assets/images/project3.png
+    alt: "项目3"
+    title: "项目 3"
+    url: "https://github.com/yourname/project3"
+    excerpt: "项目 3 的简介"

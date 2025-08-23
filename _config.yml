@@ -16,8 +16,8 @@
 title: Yuhao Xu
 description: >- # this means to ignore newlines until "baseurl:"
   A personal website 
-url: "https://gloomy-shroom.github.io"
-github_username: gloomy-shroom
+url: "https://Ha0X.github.io"
+github_username: Ha0X
 minimal_mistakes_skin: default
 search: true
 
@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "Yuhao Xu"
   avatar : "/assets/images/103638625.jpg"
-  bio    : "Student"
+  bio    : "Fudan University / Undergraduate"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
