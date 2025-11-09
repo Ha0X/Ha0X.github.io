@@ -52,14 +52,14 @@ excerpt: ""
 
 <div id="notes">
   <h2>学习笔记</h2>
-  <p>这里展示部分 Markdown 笔记内容（点击标题查看完整内容）：</p>
-  {% assign posts = site.posts | sort: 'date' | reverse %}
+  <p>按主题浏览笔记：</p>
   <ul>
-    {% for post in posts limit:3 %}
-    <li>
-      <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>
-      <div>{{ post.excerpt | strip_html | truncate: 180 }}</div>
-    </li>
-    {% endfor %}
+    <li><a href="{{ "/notes/vla/" | relative_url }}">VLA</a></li>
+    <li><a href="{{ "/notes/world-model/" | relative_url }}">World Model</a></li>
+    <li><a href="{{ "/notes/dl/" | relative_url }}">深度学习</a></li>
+    <li><a href="{{ "/notes/rl/" | relative_url }}">强化学习</a></li>
+    <li><a href="{{ "/notes/motion/" | relative_url }}">运动控制</a></li>
+    <li><a href="{{ "/notes/others/" | relative_url }}">Others</a></li>
+    <li><a href="{{ "/notes/new/" | relative_url }}">新建</a></li>
   </ul>
 </div>
