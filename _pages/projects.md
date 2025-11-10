@@ -1,5 +1,5 @@
 ---
-title: "我的项目"
+title: "项目"
 layout: single
 permalink: /projects/
 author_profile: true

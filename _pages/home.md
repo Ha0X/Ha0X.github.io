@@ -14,7 +14,7 @@ excerpt: ""
     <li>强化学习</li>
     <li>世界模型</li>
   </ul>
-  <p>希望能让机器人更加智能，走进人们的生活。</p>
+  <p>希望能让机器人更加智能</p>
   <h2>技能</h2>
   <ul>
     <li>数学基础：线性代数 / 微积分 / 概率论 / 随机过程</li>
@@ -34,7 +34,7 @@ excerpt: ""
 </div>
 
 <div id="projects">
-  <h2>我的项目</h2>
+  <h2>项目</h2>
   <p>这里是我做过的一些项目：</p>
   {% assign items = site.data.projects.projects %}
   <ul>
@@ -52,7 +52,7 @@ excerpt: ""
 
 <div id="notes">
   <h2>学习笔记</h2>
-  <p>按主题浏览笔记：</p>
+  <p>按主题浏览：</p>
   <ul>
     <li><a href="{{ "/notes/vla/" | relative_url }}">VLA</a></li>
     <li><a href="{{ "/notes/world-model/" | relative_url }}">World Model</a></li>

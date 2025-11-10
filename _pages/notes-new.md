@@ -1,11 +1,8 @@
 ---
-title: "新建 主题"
+title: "未分类"
 layout: single
 permalink: /notes/new/
 ---
-
-<h2>新建 主题笔记</h2>
-<p>这里汇总所有标注为 <code>新建</code> 的学习笔记：</p>
 
 {% assign new_posts = site.posts | where_exp: "p", "p.categories contains '新建'" | sort: 'date' | reverse %}
 {% if new_posts.size > 0 %}

@@ -1,11 +1,8 @@
 ---
-title: "Others 主题"
+title: "Others"
 layout: single
 permalink: /notes/others/
 ---
-
-<h2>Others 主题笔记</h2>
-<p>这里汇总所有标注为 <code>Others</code> 的学习笔记：</p>
 
 {% assign other_posts = site.posts | where_exp: "p", "p.categories contains 'Others'" | sort: 'date' | reverse %}
 {% if other_posts.size > 0 %}

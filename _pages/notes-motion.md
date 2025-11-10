@@ -1,11 +1,8 @@
 ---
-title: "运动控制 主题"
+title: "运动控制"
 layout: single
 permalink: /notes/motion/
 ---
-
-<h2>运动控制主题笔记</h2>
-<p>这里汇总所有标注为 <code>运动控制</code> 的学习笔记：</p>
 
 {% assign motion_posts = site.posts | where_exp: "p", "p.categories contains '运动控制'" | sort: 'date' | reverse %}
 {% if motion_posts.size > 0 %}

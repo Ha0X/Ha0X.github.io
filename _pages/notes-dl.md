@@ -1,11 +1,9 @@
 ---
-title: "深度学习 主题"
+title: "深度学习"
 layout: single
 permalink: /notes/dl/
 ---
 
-<h2>深度学习主题笔记</h2>
-<p>这里汇总所有标注为 <code>深度学习</code> 的学习笔记：</p>
 
 {% assign dl_posts = site.posts | where_exp: "p", "p.categories contains '深度学习'" | sort: 'date' | reverse %}
 {% if dl_posts.size > 0 %}
