@@ -2,13 +2,11 @@
 ---
 @import "minimal-mistakes";
 
-@media (min-width: 80em) {
-  #main,
-  .masthead__inner-wrap,
-  .breadcrumbs,
-  .page__hero--overlay .wrapper {
-    max-width: 1440px;
-  }
+/* 使用主题默认容器宽度，改为控制正文的最大宽度并居中 */
+.layout--single .page .page__inner-wrap .page__content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout--single.wide .page,
@@ -19,5 +17,5 @@
 }
 
 .layout--single.wide .page .page__inner-wrap .page__content {
-  max-width: none;
+  max-width: 960px;
 }
