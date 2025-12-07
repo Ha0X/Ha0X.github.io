@@ -19,3 +19,9 @@
 .layout--single.wide .page .page__inner-wrap .page__content {
   max-width: 960px;
 }
+
+/* 固定作者侧栏，使其随页面滚动时保持在视窗顶部 */
+.sidebar.sticky {
+  position: sticky;
+  top: 2em;
+}
