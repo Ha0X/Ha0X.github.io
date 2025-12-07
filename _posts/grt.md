@@ -11,3 +11,18 @@
 AMASS 人类动作数据集
 
 adaptive sampling 难的多sample
+
+
+几何约束 四面体
+
+
+预训练 
+gmt teacher-student
++残差策略
+
+消融实验
+
+dagger算法
+
+物体特权信息--teacher
+视觉--关键点--student
