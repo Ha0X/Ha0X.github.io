@@ -1,0 +1,23 @@
+---
+---
+@import "minimal-mistakes";
+
+@media (min-width: 80em) {
+  #main,
+  .masthead__inner-wrap,
+  .breadcrumbs,
+  .page__hero--overlay .wrapper {
+    max-width: 1440px;
+  }
+}
+
+.layout--single.wide .page,
+.layout--single.wide .page__related {
+  float: none;
+  width: 100%;
+  padding-inline-end: 0;
+}
+
+.layout--single.wide .page .page__inner-wrap .page__content {
+  max-width: none;
+}
