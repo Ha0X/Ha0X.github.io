@@ -3,32 +3,51 @@
 @import "minimal-mistakes";
 
 /* 增加整体页面宽度 - 移除默认宽度限制 */
-.wrapper {
+body .wrapper {
   max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
 /* 主内容区域宽度优化 */
-.main {
+body .main {
   max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
 /* 移除所有可能的宽度限制 */
-.container {
+body .container {
   max-width: 100% !important;
   width: 100% !important;
 }
 
-.page__wrapper {
+body .page__wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* 覆盖 Minimal Mistakes 主题的默认宽度限制 */
+body .layout--single .page__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+body .layout--single .page {
+  max-width: 100% !important;
+  width: 100% !important;
+  float: none !important;
+}
+
+body .layout--single .page__content {
   max-width: 100% !important;
   width: 100% !important;
 }
 
 /* 增加页面宽度，减少两侧空白 */
-.layout--single .page .page__inner-wrap .page__content {
+body .layout--single .page .page__inner-wrap .page__content,
+body .layout--single .page__inner-wrap .page__content,
+body .page__content {
   max-width: 100% !important;
   width: 100% !important;
   margin-left: 0 !important;
@@ -44,7 +63,8 @@
   padding-inline-end: 0;
 }
 
-.layout--single.wide .page .page__inner-wrap .page__content {
+body .layout--single.wide .page .page__inner-wrap .page__content,
+body .layout--single.wide .page__inner-wrap .page__content {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 3% !important;
@@ -52,11 +72,12 @@
 }
 
 /* 增加整体页面容器宽度 */
-.page {
+body .page {
   max-width: 100% !important;
+  width: 100% !important;
 }
 
-.page__inner-wrap {
+body .page__inner-wrap {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 0 !important;
@@ -64,7 +85,7 @@
 }
 
 /* 首页内容区域宽度优化 */
-#about, #projects, #notes {
+body #about, body #projects, body #notes {
   max-width: 100% !important;
   width: 100% !important;
   margin-left: 0 !important;
@@ -73,31 +94,17 @@
   padding-right: 3% !important;
 }
 
-/* 确保首页容器也是全宽 */
-.layout--single .page__content {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 3% !important;
-  padding-right: 3% !important;
-}
-
 /* 移除sidebar对宽度的限制（如果有） */
-.layout--single .sidebar {
-  display: none;
+body .layout--single .sidebar {
+  display: none !important;
 }
 
-.layout--single .page {
-  float: none !important;
+/* 确保所有页面容器都是全宽 */
+body .layout--single .page,
+body .layout--single .page__inner-wrap,
+body .layout--single .page__content {
+  max-width: 100% !important;
   width: 100% !important;
-}
-
-/* 移除主题默认的宽度限制 */
-.layout--single .page__inner-wrap {
-  max-width: 100% !important;
-}
-
-.layout--single .page {
-  max-width: 100% !important;
 }
 
 /* 固定作者侧栏，使其随页面滚动时保持在视窗顶部 */
