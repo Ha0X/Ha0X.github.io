@@ -1,1 +1,20 @@
-main: []
+main:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "Notes"
+    url: /notes/vla/
+    children:
+      - title: "VLA"
+        url: /notes/vla/
+      - title: "World Model"
+        url: /notes/world-model/
+      - title: "深度学习"
+        url: /notes/dl/
+      - title: "强化学习"
+        url: /notes/rl/
+      - title: "运动控制"
+        url: /notes/motion/
+      - title: "其他"
+        url: /notes/others/

@@ -2,11 +2,39 @@
 ---
 @import "minimal-mistakes";
 
-/* 使用主题默认容器宽度，改为控制正文的最大宽度并居中 */
+/* 增加整体页面宽度 - 移除默认宽度限制 */
+.wrapper {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 主内容区域宽度优化 */
+.main {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 移除所有可能的宽度限制 */
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.page__wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* 增加页面宽度，减少两侧空白 */
 .layout--single .page .page__inner-wrap .page__content {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
 }
 
 .layout--single.wide .page,
@@ -17,11 +45,264 @@
 }
 
 .layout--single.wide .page .page__inner-wrap .page__content {
-  max-width: 960px;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+/* 增加整体页面容器宽度 */
+.page {
+  max-width: 100% !important;
+}
+
+.page__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 首页内容区域宽度优化 */
+#about, #projects, #notes {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+/* 确保首页容器也是全宽 */
+.layout--single .page__content {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+/* 移除sidebar对宽度的限制（如果有） */
+.layout--single .sidebar {
+  display: none;
+}
+
+.layout--single .page {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* 移除主题默认的宽度限制 */
+.layout--single .page__inner-wrap {
+  max-width: 100% !important;
+}
+
+.layout--single .page {
+  max-width: 100% !important;
 }
 
 /* 固定作者侧栏，使其随页面滚动时保持在视窗顶部 */
 .sidebar.sticky {
   position: sticky;
   top: 2em;
+}
+
+/* 字体美化 - 全局字体设置 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #34495e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 标题字体优化 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: #2c3e50;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* 段落和列表优化 */
+p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.25em;
+  color: #34495e;
+}
+
+ul, ol {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.25em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  color: #34495e;
+}
+
+/* 链接样式优化 */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* 代码块优化 */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9em;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #e83e8c;
+}
+
+pre {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* 首页内容区域优化 */
+#about, #projects, #notes {
+  margin-bottom: 3rem;
+}
+
+#about h2, #projects h2, #notes h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+#about h2:first-child, #projects h2:first-child, #notes h2:first-child {
+  margin-top: 0;
+}
+
+/* 导航菜单字体优化 */
+.nav__list .nav__items {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* 侧边栏优化 */
+.sidebar {
+  font-size: 0.95rem;
+}
+
+.sidebar h2, .sidebar h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* 文章内容区域优化 */
+.page__content {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.page__content p {
+  margin-bottom: 1.25em;
+}
+
+.page__content ul, .page__content ol {
+  margin-bottom: 1.25em;
+}
+
+/* 响应式优化 */
+@media (max-width: 1200px) {
+  .layout--single .page .page__inner-wrap .page__content,
+  .layout--single.wide .page .page__inner-wrap .page__content {
+    max-width: 98% !important;
+    width: 98% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+  
+  #about, #projects, #notes {
+    max-width: 98% !important;
+    width: 98% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  p, ul, ol {
+    font-size: 1rem;
+  }
+  
+  .layout--single .page .page__inner-wrap .page__content,
+  .layout--single.wide .page .page__inner-wrap .page__content {
+    max-width: 98% !important;
+    width: 98% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+  
+  #about, #projects, #notes {
+    max-width: 98% !important;
+    width: 98% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
 }

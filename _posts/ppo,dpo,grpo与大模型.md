@@ -1,3 +1,11 @@
+---
+title: "PPO, DPO, GRPO 与大模型"
+date: 2024-01-01 10:00:00 +0800
+categories: [强化学习]
+layout: single
+author_profile: true
+---
+
 # 强化学习与大模型
 
 ## 为何需要强化学习？

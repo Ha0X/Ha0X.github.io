@@ -1,11 +1,11 @@
 ---
-title: "项目"
+title: "Projects"
 layout: single
 permalink: /projects/
 author_profile: true
 ---
 
-这里是我做过的一些项目：
+Here are some projects I have worked on:
 
 {% include feature_row id="projects" %}
 

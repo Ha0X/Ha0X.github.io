@@ -1,27 +1,41 @@
-# Minimal Mistakes remote theme starter
+# Personal Website
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+个人学术网站，使用 Jekyll 和 Minimal Mistakes 主题构建，托管于 GitHub Pages。
 
-Contains basic configuration to get you a site with:
+## 关于
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+本网站包含我的研究笔记、项目展示和学习总结，主要关注以下领域：
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+- 机器人学（Robotics）
+- 强化学习（Reinforcement Learning）
+- 世界模型（World Models）
+- 视觉-语言-动作模型（Vision-Language-Action Models）
 
----
+## 网站结构
 
-## Troubleshooting
+- `_posts/` - 博客文章和学习笔记
+- `_pages/` - 静态页面（首页、项目页等）
+- `_data/` - 数据文件（导航菜单、项目列表等）
+- `assets/` - 静态资源（图片、CSS 等）
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## 本地开发
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+```bash
+# 安装依赖
+bundle install
+
+# 启动本地服务器
+bundle exec jekyll serve
+
+# 访问 http://localhost:4000
+```
+
+## 技术栈
+
+- [Jekyll](https://jekyllrb.com/) - 静态网站生成器
+- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) - Jekyll 主题
+- [GitHub Pages](https://pages.github.com/) - 网站托管
+
+## 许可证
+
+网站内容采用 [MIT License](LICENSE) 许可。
