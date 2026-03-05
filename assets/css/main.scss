@@ -185,10 +185,12 @@ a:hover {
 }
 
 /* 导航栏链接不应用全局下划线 */
-.nav__list a:hover,
-.masthead__menu-item a:hover,
-.greedy-nav a:hover {
+body .nav__list a:hover,
+body .masthead__menu-item a:hover,
+body .greedy-nav a:hover,
+body .masthead__menu a:hover {
   text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 /* 代码块优化 */
@@ -243,37 +245,65 @@ pre code {
 }
 
 /* 导航栏链接样式优化 - 移除双重下划线 */
-.nav__list a,
-.nav__list .nav__items a,
-.masthead__menu-item a {
+body .nav__list a,
+body .nav__list .nav__items a,
+body .masthead__menu-item a,
+body .greedy-nav a,
+body .greedy-nav__list a {
   text-decoration: none !important;
   border-bottom: none !important;
+  border: none !important;
+  box-shadow: none !important;
   transition: color 0.2s ease;
 }
 
-.nav__list a:hover,
-.nav__list .nav__items a:hover,
-.masthead__menu-item a:hover {
+body .nav__list a:hover,
+body .nav__list .nav__items a:hover,
+body .masthead__menu-item a:hover,
+body .greedy-nav a:hover,
+body .greedy-nav__list a:hover {
   text-decoration: none !important;
   border-bottom: none !important;
+  border: none !important;
+  box-shadow: none !important;
   color: #2980b9 !important;
 }
 
 /* 移除导航栏的默认下划线和边框效果 */
-.masthead__menu-item a::after,
-.nav__list a::after {
+body .masthead__menu-item a::after,
+body .masthead__menu-item a::before,
+body .nav__list a::after,
+body .nav__list a::before,
+body .greedy-nav a::after,
+body .greedy-nav a::before {
   display: none !important;
+  content: none !important;
 }
 
 /* 确保导航栏链接没有双重效果 */
-.greedy-nav a,
-.greedy-nav__toggle {
+body .greedy-nav a,
+body .greedy-nav__toggle {
   text-decoration: none !important;
+  border-bottom: none !important;
 }
 
-.greedy-nav a:hover {
+body .greedy-nav a:hover {
   text-decoration: none !important;
+  border-bottom: none !important;
   color: #2980b9 !important;
+}
+
+/* 移除所有导航相关的下划线 */
+body .masthead__menu a,
+body .masthead__menu-item a {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+body .masthead__menu a:hover,
+body .masthead__menu-item a:hover {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
 }
 
 /* 侧边栏优化 */

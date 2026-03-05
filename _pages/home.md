@@ -10,17 +10,18 @@ excerpt: ""
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; color: #2c3e50;">About Me</h2>
   <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">I am Yuhao Xu, an undergraduate student majoring in Intelligent Science and Technology at Fudan University. My research interests focus on:</p>
   <ul style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; color: #34495e;">
-    <li><strong>Robotics</strong>: Vision-Language-Action (VLA) models, robot control and planning</li>
-    <li><strong>Reinforcement Learning</strong>: Deep reinforcement learning algorithms and applications</li>
-    <li><strong>World Models</strong>: Model-based learning and prediction</li>
+    <li><strong>VLA</strong>:</li>
+    <li><strong>Reinforcement Learning</strong>:</li>
+    <li><strong>World Models</strong>:</li>
+    <li><strong>Causality & Embodied AI</strong>:</li>
   </ul>
-  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; color: #34495e;">My goal is to explore how to make robots more intelligent and flexible in understanding and executing complex tasks.</p>
+  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; color: #34495e;">My goal is to make robots more intelligent and flexible in understanding and executing complex tasks.</p>
   
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem; color: #2c3e50;">Skills</h2>
   <ul style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; color: #34495e;">
     <li><strong>Mathematics</strong>: Linear Algebra, Calculus, Probability Theory, Stochastic Processes</li>
-    <li><strong>Robotics</strong>: Introduction to Robotics, ROS2, Automatic Control Theory</li>
-    <li><strong>Programming Languages</strong>: Python, C++</li>
+    <li><strong>Robotics</strong>: Mujoco, ROS2, IsaacSim</li>
+    <li><strong>Programming Languages</strong>: Python, C++，C#</li>
     <li><strong>Development Tools</strong>: Git, Docker, Linux</li>
   </ul>
   
