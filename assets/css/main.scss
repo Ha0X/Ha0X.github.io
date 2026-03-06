@@ -54,6 +54,16 @@ body .page__content {
   margin-right: 0 !important;
   padding-left: 3% !important;
   padding-right: 3% !important;
+  padding-top: 2rem !important;
+}
+
+/* 为页面内容添加顶部间距，避免被固定导航栏遮挡 */
+body .page__inner-wrap {
+  padding-top: 1rem !important;
+}
+
+body .layout--single .page__inner-wrap {
+  padding-top: 1rem !important;
 }
 
 .layout--single.wide .page,
@@ -69,6 +79,7 @@ body .layout--single.wide .page__inner-wrap .page__content {
   width: 100% !important;
   padding-left: 3% !important;
   padding-right: 3% !important;
+  padding-top: 2rem !important;
 }
 
 /* 增加整体页面容器宽度 */
@@ -111,6 +122,24 @@ body .layout--single .page__content {
 .sidebar.sticky {
   position: sticky;
   top: 2em;
+}
+
+/* 移除导航栏的固定定位，避免遮挡内容 */
+body .masthead {
+  position: relative !important;
+}
+
+body .greedy-nav {
+  position: relative !important;
+}
+
+/* 或者如果导航栏必须固定，确保页面内容有足够的顶部间距 */
+body .masthead--fixed {
+  position: relative !important;
+}
+
+body .masthead--sticky {
+  position: relative !important;
 }
 
 /* 字体美化 - 全局字体设置 */

@@ -8,20 +8,22 @@ excerpt: ""
 
 <div id="about" style="margin-bottom: 3rem; max-width: 100%; width: 100%;">
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; color: #2c3e50;">About Me</h2>
-  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">I am Yuhao Xu, an undergraduate student majoring in Intelligent Science and Technology at Fudan University. My research interests focus on:</p>
+  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">I am Yuhao Xu, an undergraduate student majoring in Intelligent Science and Technology at Fudan University. 
+  
+  My research interests focus on:</p>
   <ul style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; color: #34495e;">
-    <li><strong>VLA</strong>:</li>
-    <li><strong>Reinforcement Learning</strong>:</li>
-    <li><strong>World Models</strong>:</li>
-    <li><strong>Causality & Embodied AI</strong>:</li>
+    <li><strong>VLA</strong></li>
+    <li><strong>Reinforcement Learning</strong></li>
+    <li><strong>World Models</strong></li>
+    <li><strong>Causality & Embodied AI</strong></li>
   </ul>
-  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; color: #34495e;">My goal is to make robots more intelligent and flexible in understanding and executing complex tasks.</p>
+  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; color: #34495e;">My research goal is to advance embodied intelligence by developing robots that can understand, reason about, and adapt to complex real-world scenarios.</p>
   
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem; color: #2c3e50;">Skills</h2>
   <ul style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; color: #34495e;">
     <li><strong>Mathematics</strong>: Linear Algebra, Calculus, Probability Theory, Stochastic Processes</li>
     <li><strong>Robotics</strong>: Mujoco, ROS2, IsaacSim</li>
-    <li><strong>Programming Languages</strong>: Python, C++，C#</li>
+    <li><strong>Programming Languages</strong>: Python, C++, C#</li>
     <li><strong>Development Tools</strong>: Git, Docker, Linux</li>
   </ul>
   
@@ -35,27 +37,6 @@ excerpt: ""
     <li><strong>Email</strong>: <a href="mailto:24300830004@m.fudan.edu.cn" style="color: #3498db; text-decoration: none;">24300830004@m.fudan.edu.cn</a></li>
     <li><strong>GitHub</strong>: <a href="https://github.com/Ha0X" target="_blank" rel="noopener" style="color: #3498db; text-decoration: none;">https://github.com/Ha0X</a></li>
   </ul>
-</div>
-
-<div id="projects" style="margin-bottom: 3rem; max-width: 100%; width: 100%;">
-  <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; color: #2c3e50;">Projects</h2>
-  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">Some projects I have worked on:</p>
-  {% assign items = site.data.projects.projects %}
-  {% if items.size > 0 %}
-  <ul style="font-size: 0.95rem; line-height: 1.8; color: #34495e;">
-    {% for item in items %}
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #2c3e50;">{{ item.title }}</strong>
-      <div style="margin-top: 0.5rem;">
-        {{ item.excerpt }}
-        <span> — <a href="{{ item.url }}" target="_blank" rel="noopener" style="color: #3498db; text-decoration: none;">GitHub Repository</a></span>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p style="font-size: 0.95rem; line-height: 1.7; color: #7f8c8d;">Projects information is being updated...</p>
-  {% endif %}
 </div>
 
 <div id="notes" style="max-width: 100%; width: 100%;">
