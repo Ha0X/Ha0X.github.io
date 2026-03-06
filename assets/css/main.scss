@@ -118,10 +118,16 @@ body .layout--single .page__content {
   width: 100% !important;
 }
 
-/* 固定作者侧栏，使其随页面滚动时保持在视窗顶部 */
-.sidebar.sticky {
-  position: sticky;
-  top: 2em;
+/* 完全移除作者侧边栏 */
+body .sidebar,
+body .author__avatar,
+body .author__content {
+  display: none !important;
+}
+
+body .sidebar.sticky {
+  display: none !important;
+  position: relative !important;
 }
 
 /* 移除导航栏的固定定位，避免遮挡内容 */

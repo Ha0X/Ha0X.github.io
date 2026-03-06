@@ -2,6 +2,7 @@
 title: "Others"
 layout: single
 permalink: /notes/others/
+author_profile: false
 ---
 
 {% assign other_posts = site.posts | where_exp: "p", "p.categories contains 'Others'" | sort: 'date' | reverse %}

@@ -2,6 +2,7 @@
 title: "强化学习"
 layout: single
 permalink: /notes/rl/
+author_profile: false
 ---
 
 {% assign rl_posts = site.posts | where_exp: "p", "p.categories contains '强化学习'" | sort: 'date' | reverse %}

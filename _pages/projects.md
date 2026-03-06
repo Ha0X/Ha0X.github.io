@@ -2,7 +2,7 @@
 title: "Projects"
 layout: single
 permalink: /projects/
-author_profile: true
+author_profile: false
 ---
 
 Here are some projects I have worked on:

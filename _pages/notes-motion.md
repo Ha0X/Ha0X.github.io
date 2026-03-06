@@ -2,6 +2,7 @@
 title: "运动控制"
 layout: single
 permalink: /notes/motion/
+author_profile: false
 ---
 
 {% assign motion_posts = site.posts | where_exp: "p", "p.categories contains '运动控制'" | sort: 'date' | reverse %}

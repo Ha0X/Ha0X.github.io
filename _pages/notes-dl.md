@@ -2,6 +2,7 @@
 title: "深度学习"
 layout: single
 permalink: /notes/dl/
+author_profile: false
 ---
 
 {% assign dl_posts = site.posts | where_exp: "p", "p.categories contains '深度学习'" | sort: 'date' | reverse %}

@@ -2,6 +2,7 @@
 title: "World Model"
 layout: single
 permalink: /notes/world-model/
+author_profile: false
 ---
 
 {% assign wm_posts = site.posts | where_exp: "p", "p.categories contains 'World Model'" | sort: 'date' | reverse %}

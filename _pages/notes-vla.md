@@ -2,6 +2,7 @@
 title: "VLA"
 layout: single
 permalink: /notes/vla/
+author_profile: false
 ---
 
 {% assign vla_posts = site.posts | where_exp: "p", "p.categories contains 'VLA'" | sort: 'date' | reverse %}
