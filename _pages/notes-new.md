@@ -2,6 +2,7 @@
 title: "未分类"
 layout: single
 permalink: /notes/new/
+author_profile: false
 ---
 
 {% assign new_posts = site.posts | where_exp: "p", "p.categories contains '新建'" | sort: 'date' | reverse %}
