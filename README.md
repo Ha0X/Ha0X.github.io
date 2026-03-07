@@ -2,6 +2,8 @@
 
 个人学术网站，使用 Jekyll 和 Minimal Mistakes 主题构建，托管于 GitHub Pages。
 
+<!-- Last updated: 2024 -->
+
 ## 关于
 
 本网站包含我的研究笔记、项目展示和学习总结，主要关注以下领域：
