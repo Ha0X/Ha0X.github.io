@@ -4,7 +4,7 @@ main:
   - title: "Projects"
     url: /projects/
   - title: "Notes"
-    url: /notes/vla/
+    url: /notes/
     children:
       - title: "VLA"
         url: /notes/vla/

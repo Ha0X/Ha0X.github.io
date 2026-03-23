@@ -38,16 +38,3 @@ excerpt: ""
     <li><strong>GitHub</strong>: <a href="https://github.com/Ha0X" target="_blank" rel="noopener" style="color: #3498db; text-decoration: none;">https://github.com/Ha0X</a></li>
   </ul>
 </div>
-
-<div id="notes" style="max-width: 100%; width: 100%;">
-  <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; color: #2c3e50;">Research Notes</h2>
-  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">Research notes and summaries organized by topic:</p>
-  <ul style="font-size: 0.95rem; line-height: 1.8; color: #34495e;">
-    <li><a href="{{ "/notes/vla/" | relative_url }}" style="color: #3498db; text-decoration: none;">VLA（视觉-语言-动作）</a></li>
-    <li><a href="{{ "/notes/world-model/" | relative_url }}" style="color: #3498db; text-decoration: none;">World Model（世界模型）</a></li>
-    <li><a href="{{ "/notes/dl/" | relative_url }}" style="color: #3498db; text-decoration: none;">深度学习</a></li>
-    <li><a href="{{ "/notes/rl/" | relative_url }}" style="color: #3498db; text-decoration: none;">强化学习</a></li>
-    <li><a href="{{ "/notes/motion/" | relative_url }}" style="color: #3498db; text-decoration: none;">运动控制</a></li>
-    <li><a href="{{ "/notes/others/" | relative_url }}" style="color: #3498db; text-decoration: none;">其他主题</a></li>
-  </ul>
-</div>
