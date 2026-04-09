@@ -5,12 +5,17 @@ permalink: /notes/
 author_profile: false
 ---
 
-<p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; color: #34495e;">笔记按主题分类：</p>
-<ul style="font-size: 0.95rem; line-height: 1.8; color: #34495e;">
-  <li><a href="{{ "/notes/vla/" | relative_url }}" style="color: #3498db; text-decoration: none;">VLA（视觉-语言-动作）</a></li>
-  <li><a href="{{ "/notes/world-model/" | relative_url }}" style="color: #3498db; text-decoration: none;">World Model（世界模型）</a></li>
-  <li><a href="{{ "/notes/dl/" | relative_url }}" style="color: #3498db; text-decoration: none;">深度学习</a></li>
-  <li><a href="{{ "/notes/rl/" | relative_url }}" style="color: #3498db; text-decoration: none;">强化学习</a></li>
-  <li><a href="{{ "/notes/motion/" | relative_url }}" style="color: #3498db; text-decoration: none;">运动控制</a></li>
-  <li><a href="{{ "/notes/others/" | relative_url }}" style="color: #3498db; text-decoration: none;">其他</a></li>
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% if sorted_posts.size > 0 %}
+<ul style="list-style: none; padding-left: 0;">
+  {% for post in sorted_posts %}
+  <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ecf0f1;">
+    <strong style="font-size: 1.25rem; font-weight: 600;"><a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none;">{{ post.title }}</a></strong>
+    <div style="margin-top: 0.35rem; font-size: 0.9rem; color: #95a5a6;">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <div style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6; color: #7f8c8d;">{{ post.excerpt | strip_html | truncate: 180 }}</div>
+  </li>
+  {% endfor %}
 </ul>
+{% else %}
+<p style="font-size: 1.05rem; color: #7f8c8d;">暂无笔记，稍后更新。</p>
+{% endif %}
