@@ -1,13 +1,18 @@
-<!-- _includes/head/custom.html -->
+<!-- MathJax 3：加载 ams / textmacros，避免 \\mathbb、\\text、\\min 等报错导致整段公式不显示 -->
 <script>
-  window.MathJax = {
+  MathJax = {
+    loader: {
+      load: ['[tex]/ams', '[tex]/textmacros']
+    },
     tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],     // 行内：$...$ 或 \( ... \)
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 行间：$$...$$ 或 \[ ... \]
+      packages: { '[+]': ['ams', 'textmacros'] },
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
       processEscapes: true
     },
-    svg: { fontCache: 'global' }
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
   };
 </script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
