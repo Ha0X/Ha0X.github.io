@@ -1,15 +1,12 @@
 ---
-title: "强化学习基础笔记"
+title: "Reinforcement Learning Fundamentals"
 date: 2026-04-11
 permalink: /notes/reinforcement-learning-fundamentals/
 categories:
   - Notes
 tags:
   - reinforcement learning
-  - deep learning
 ---
-
-## 基础知识
 
 什么是强化学习？智能体通过与环境交互，不断学习，完成特定目标。
 

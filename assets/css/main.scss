@@ -295,6 +295,24 @@ pre code {
 .layout--single .page__content .highlight .o { color: #0550ae !important; }
 .layout--single .page__content .highlight .nb { color: #953800 !important; }
 .layout--single .page__content .highlight .bp { color: #0550ae !important; }
+.layout--single .page__content .highlight .n { color: #0550ae !important; }
+.layout--single .page__content .highlight .nn { color: #953800 !important; }
+.layout--single .page__content .highlight .p { color: #cf222e !important; }
+.layout--single .page__content .highlight .na { color: #953800 !important; }
+.layout--single .page__content .highlight .nl { color: #24292f !important; }
+.layout--single .page__content .highlight .nt { color: #cf222e !important; }
+.layout--single .page__content .highlight .vc,
+.layout--single .page__content .highlight .vi { color: #953800 !important; }
+.layout--single .page__content .highlight .err {
+  color: #cf222e !important;
+  background: transparent !important;
+}
+
+/* 覆盖主题在 .highlight 内把字色设成浅/白的情况，保证 Rouge token 可见 */
+.layout--single .page__content .highlight code,
+.layout--single .page__content .highlight pre code {
+  color: #24292f !important;
+}
 
 /* 正文里行内 code：与代码块区分 */
 .layout--single .page__content p code,
