@@ -54,7 +54,7 @@ body .page__content {
   margin-right: 0 !important;
   padding-left: 3% !important;
   padding-right: 3% !important;
-  padding-top: 2rem !important;
+  padding-top: 1.35rem !important;
 }
 
 /* 为页面内容添加顶部间距，避免被固定导航栏遮挡 */
@@ -79,7 +79,7 @@ body .layout--single.wide .page__inner-wrap .page__content {
   width: 100% !important;
   padding-left: 3% !important;
   padding-right: 3% !important;
-  padding-top: 2rem !important;
+  padding-top: 1.35rem !important;
 }
 
 /* 增加整体页面容器宽度 */
@@ -148,11 +148,11 @@ body .masthead--sticky {
   position: relative !important;
 }
 
-/* 字体美化 - 全局字体设置 */
+/* 字体美化 - 全局字体设置（略紧凑） */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.55;
   color: #34495e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -161,49 +161,49 @@ body {
 /* 标题字体优化 */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.28;
   color: #2c3e50;
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+  margin-top: 1.15em;
+  margin-bottom: 0.55em;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.18rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
 }
 
 /* 段落和列表优化 */
 p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 1.25em;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 0.95em;
   color: #34495e;
 }
 
 ul, ol {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 1.25em;
-  padding-left: 1.5em;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 0.95em;
+  padding-left: 1.35em;
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35em;
   color: #34495e;
 }
 
@@ -239,19 +239,73 @@ code {
 }
 
 pre {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.82rem;
+  line-height: 1.5;
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 6px;
-  padding: 1rem;
+  padding: 0.85rem;
   overflow-x: auto;
 }
 
+/* 代码块内由 Rouge 着色，勿设 color: inherit 盖住 token */
 pre code {
   background-color: transparent;
   padding: 0;
-  color: inherit;
+}
+
+/*  fenced 代码：浅色底 + 明确语法色（GitHub 风） */
+.layout--single .page__content div.highlight,
+.layout--single .page__content figure.highlight {
+  margin: 0.95em 0;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  background-color: #f6f8fa !important;
+}
+
+.layout--single .page__content .highlight pre {
+  margin: 0;
+  padding: 0.85rem 0.95rem !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #24292f !important;
+}
+
+.layout--single .page__content .highlight pre code {
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #24292f !important;
+}
+
+.layout--single .page__content .highlight .k,
+.layout--single .page__content .highlight .kd,
+.layout--single .page__content .highlight .kn { color: #cf222e !important; }
+.layout--single .page__content .highlight .nf,
+.layout--single .page__content .highlight .nx { color: #8250df !important; }
+.layout--single .page__content .highlight .nc { color: #953800 !important; }
+.layout--single .page__content .highlight .s,
+.layout--single .page__content .highlight .s1,
+.layout--single .page__content .highlight .s2 { color: #0a3069 !important; }
+.layout--single .page__content .highlight .mi,
+.layout--single .page__content .highlight .mf { color: #0550ae !important; }
+.layout--single .page__content .highlight .c1,
+.layout--single .page__content .highlight .cm { color: #6e7781 !important; }
+.layout--single .page__content .highlight .o { color: #0550ae !important; }
+.layout--single .page__content .highlight .nb { color: #953800 !important; }
+.layout--single .page__content .highlight .bp { color: #0550ae !important; }
+
+/* 正文里行内 code：与代码块区分 */
+.layout--single .page__content p code,
+.layout--single .page__content li code,
+.layout--single .page__content td code {
+  font-size: 0.88em;
+  background-color: #f0f4f8 !important;
+  color: #24292f !important;
+  padding: 0.15em 0.4em;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
 }
 
 /* 首页内容区域优化 */
@@ -260,13 +314,13 @@ pre code {
 }
 
 #about h2, #projects h2, #notes h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
   color: #2c3e50;
   border-bottom: 2px solid #ecf0f1;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
 }
 
 #about h2:first-child, #projects h2:first-child, #notes h2:first-child {
@@ -353,16 +407,50 @@ body .masthead__menu-item a:hover {
 
 /* 文章内容区域优化 */
 .page__content {
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 .page__content p {
-  margin-bottom: 1.25em;
+  margin-bottom: 0.95em;
 }
 
 .page__content ul, .page__content ol {
-  margin-bottom: 1.25em;
+  margin-bottom: 0.95em;
+}
+
+/* 单篇笔记：标题层级（h2 章 → h3 节 → h4 小节） */
+.layout--single .page__content > h2 {
+  font-size: 1.45rem;
+  margin-top: 1.65rem;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #e8eef2;
+}
+
+.layout--single .page__content > h2:first-of-type {
+  margin-top: 0.35rem;
+}
+
+.layout--single .page__content > h3 {
+  font-size: 1.12rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.layout--single .page__content > h4 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: #34495e;
+}
+
+.layout--single .page__content details summary {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #34495e;
+  cursor: pointer;
 }
 
 /* 响应式优化 */
@@ -385,23 +473,23 @@ body .masthead__menu-item a:hover {
 
 @media (max-width: 768px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
   
   h1 {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
   }
   
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.32rem;
   }
   
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.12rem;
   }
   
   p, ul, ol {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
   
   .layout--single .page .page__inner-wrap .page__content,
